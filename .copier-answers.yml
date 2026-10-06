@@ -1,0 +1,10 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 84e08b9
+_src_path: gh:stfc-aeg/odin-control-adapter-template.git
+author_email: ashley.neaves@stfc.ac.uk
+author_name: Ashley Neaves
+description: Testing the new Template
+github_org: ANeaves
+github_url: https://github.com/ANeaves/template_test
+package_name: template_test
+project_name: Template Test

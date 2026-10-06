@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "template_test"
+description = "Testing the new Template"
+dynamic = ["version"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = [
+    "odin-control>=2.0",
+]
+readme = "README.md"
+authors = [
+    {name = Ashley Neaves, email = ashley.neaves@stfc.ac.uk },
+]
+
+[project.urls]
+GitHub = "https://github.com/ANeaves/template_test"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
+# Optional settings for setuptools_scm
+root = "."
+write_to = "src/template_test/_version.py"
+version_scheme = "no-guess-dev"
+local_scheme = "node-and-date"
